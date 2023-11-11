@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
 import joblib
-model = joblib.load(r'C:\\Users\\ascom\\Desktop\\AI models for DR.Hussein\\dt_model.pkl')
-encoder = joblib.load(r'C:\\Users\\ascom\\Desktop\\AI models for DR.Hussein\\encoder.pkl')
+model = joblib.load('model.pkl')
+encoder = joblib.load('encoder.pkl')
+
 st.title("GVHD")
 # User input fields
 st.sidebar.header("User Input")
