@@ -4,6 +4,7 @@ import streamlit as st
 
 # Load the trained model and encoder
 model = joblib.load('final.pkl')
+encoder = joblib.load('encoder.pkl')
 
 
 st.title("GVHD Prediction")
