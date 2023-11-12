@@ -3,16 +3,15 @@ import joblib
 import streamlit as st
 
 # Load the trained model and encoder
-model = joblib.load(r'C:\\Users\\ascom\\Desktop\\AI models for DR.Hussein\\final.pkl')
-encoder = joblib.load(r'C:\\Users\\ascom\\Desktop\\AI models for DR.Hussein\\encoder.pkl')
+model = joblib.load('final.pkl')
+
 
 st.title("GVHD Prediction")
-
+st.image('bloodstemcell.jpg', use_column_width=True)  # Replace "path_to_your_image.jpg" with the actual path to your image
 # User input fields
 st.header("User Input")
 
-# Define input fields for the variables you provided
-st.subheader("User Input Variables")
+
 Recipientgender = st.radio("Recipient gender", ['Male', 'Female'])
 Donorage = st.slider("Donor age", min_value=0, max_value=100, value=50, step=1)
 Riskgroup = st.radio("Risk group", ['High risk', 'Low risk'])
