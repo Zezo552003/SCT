@@ -3,8 +3,8 @@ import joblib
 import streamlit as st
 
 # Load the trained model and encoder
-model = joblib.load(final.pkl')
-encoder = joblib.load(encoder.pkl')
+model = joblib.load('final.pkl')
+encoder = joblib.load('encoder.pkl')
 
 st.title("GVHD Prediction")
 st.image('bloodstemcell.jpg', use_column_width=True)  # Replace "path_to_your_image.jpg" with the actual path to your image
