@@ -7,7 +7,7 @@ model = joblib.load('final.pkl')
 
 
 st.title("GVHD Prediction")
-st.image('bloodstemcell.jpg', use_column_width=True)  # Replace "path_to_your_image.jpg" with the actual path to your image
+st.image('220914_bloodstemcell_1.jpg', use_column_width=True)  # Replace "path_to_your_image.jpg" with the actual path to your image
 # User input fields
 st.header("User Input")
 
